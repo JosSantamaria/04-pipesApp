@@ -48,7 +48,11 @@
 
                <hr>
                <ul>
-                   <li></li>
+                   <li>fecha | date:'long' : 'GMT-6' </li>
+                   <li>fecha | date:'long' : 'GMT-5' </li>
+                   <li>fecha | date:'long' : '' : 'fr' </li>
+
+
                </ul>
 
         </p-card>
@@ -65,12 +69,18 @@
                 <li> {{fecha | date:'long' }} </li>
                 <li> {{fecha | date:'MMMM dd, yyyy ' }} </li>
                 <li> {{fecha | date:'GG dd/MMM/yy h:mm z ' }} </li>
-
-                <hr>
-                <ul>
-                    <li>{{fecha | date:'long' }}</li>
                 </ul>
-            </ul>
+                <hr>
+
+                <ul>
+                    <li>{{fecha | date:'long' : 'GMT-6' }}</li>
+                    <li>{{fecha | date:'long' : 'GMT-5' }}</li>
+                   <li>{{fecha | date:'long' : '' : 'fr'}} </li>
+
+
+                </ul>
+
+            
         </p-card>
     </div>
 </div>
