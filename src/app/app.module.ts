@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PrimeNgModule } from './prime-ng/prime-ng.module';
 import { SharedModule } from './shared/shared.module';
 import { AppRouterModule } from './app-router.module';
+import { VentasModule } from './ventas/ventas.module';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { AppRouterModule } from './app-router.module';
     BrowserModule,
     AppRouterModule,
     SharedModule,
+    VentasModule
     
   ],
   providers: [],
