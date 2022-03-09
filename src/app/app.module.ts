@@ -1,5 +1,8 @@
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+//Animaciones de angular  | | compartidas con PrimeNg
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { AppComponent } from './app.component';
 
 // Mod :: Personalizado Prime Ng Module (all imports)
@@ -22,6 +25,7 @@ registerLocaleData(localeFr);
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRouterModule,
     SharedModule,
     VentasModule
