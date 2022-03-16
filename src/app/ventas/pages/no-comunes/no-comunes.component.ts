@@ -1,4 +1,7 @@
 import { Component} from '@angular/core';
+//Interval rxjs
+import { interval } from 'rxjs';
+import { tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-no-comunes',
@@ -31,8 +34,39 @@ export class NoComunesComponent  {
       this.nombre = 'Maria';
       this.genero = 'femenino';
     }
-
-    borrarCliente(){}
     
+
+    borrarCliente(){
+      // this.clientes.splice(0,1)
+      //pop: elimina el ultimo elemento del arreglo.
+      this.clientes.pop() 
+    }
+    
+    persona = {
+      nombre:'Joset',
+      edad:21,
+      ciudad: 'Merida',
+      estado: 'Yucatan'
+    }
+
+    //JsonPipe
+
+    heroes = [{nombre:'Spiderman',universo:'Marvel',habilidad:'telaraña'},
+              {nombre:'IronMan',universo:'Marvel',habilidad:'Tecnologia'},
+              {nombre:'Batman',universo:'DC',habilidad:'Dinero'},
+              {nombre:'Superman',universo:'DC',habilidad:'Volar'}]  
+
+    //AsyncPipe
+    miObservable = interval(5000); //0,1,2,3,4... emite numeros...
+
+    valorPromesa = new Promise((resolve,reject)=>{
+
+      setTimeout( ()=>{
+          resolve('!! Tenemos data de promesa..');
+      },3500);
+
+    });
+
+
 
   }
