@@ -35,24 +35,15 @@ export class MenuComponent implements OnInit {
             label:'No Comunes',
             icon:'pi pi-pound',
             routerLink:'no-comunes'
-          }
-        ]
-       
+          }]
       },
       {
         label:'Pipes Personalizados',
         icon:'pi pi-cog',
-        items:
-        [
-          {
-            label:'Textos',
-            icon:'pi pi-align-left',
-            routerLink:' '
-          }
-        ]
+        routerLink:'ordenar'
       }
       
-    ]
+    ];
     
   }
 
